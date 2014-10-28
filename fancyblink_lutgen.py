@@ -8,8 +8,6 @@ v = v ** 2.2 # gamma correction
 v = v*1000 + np.random.rand(len(v)) # dithering
 
 f = open('fancyblink_lut.c', 'w')
-# // static const int lut[10001] 
-# //__attribute__ ((section (".rodata")))
 f.write('''
 //generated file
 const int lut[1001] = {
